@@ -1,0 +1,11 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.metadata.myvariable }}.
+
+title: Tu blog de confianza
+tagline: Información actualizada y de calidad
+email: devel@mail.com
+description: >-
+  Blog por y para developers, la mejor forma de estar al día y aprender de forma práctica y sencialla
