@@ -10,4 +10,5 @@ jobs:
       - name: prepare
         run: |
           bundle install
+          npm install
           bridgetown deploy
