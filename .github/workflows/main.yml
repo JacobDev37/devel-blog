@@ -1,0 +1,9 @@
+name: Main workflow
+on: [push]
+
+jobs:
+  complile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: prepare
+        run: ruby --version
