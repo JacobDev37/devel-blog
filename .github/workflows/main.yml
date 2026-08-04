@@ -12,3 +12,10 @@ jobs:
           bundle install
           npm install
           bridgetown deploy
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ vars.AWSACCESS }}
+          aws-secret-access-key: ${{ secrets.AWSSECRET }}
+          aws-region: us-east-1
+      - name: deploy
+        run: aws s3 sync output/ s3://devel.link --delete
